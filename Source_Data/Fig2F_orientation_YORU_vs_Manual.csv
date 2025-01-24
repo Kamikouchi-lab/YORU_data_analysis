@@ -1,0 +1,4 @@
+,yoru_data_name,boris_data_name,def_left_data_name,def_right_data_name,movie_idex,accuracy,precision,recall,f1_score,movie_total_frames
+0,200529_3_on.csv,20529_3_on.csv,processed_200529_3_onleft2.csv,processed_200529_3_onright2.csv,movie2,0.8954626334519573,0.892099743649499,0.8879590887959089,0.8900246003642884,8992.0
+1,210118_1_on.csv,210118_1_on.csv,processed_210118_1_onleft.csv,processed_210118_1_onright.csv,movie4,0.9141459074733096,0.8742774566473989,0.8503162333099087,0.8621303883149269,8992.0
+2,total,total,total,total,total,0.9048042704626335,0.8851112055531946,0.8729714605484051,0.8789994199452268,17984
