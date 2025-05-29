@@ -102,20 +102,21 @@
 - Calculate accuracy score (Zebrafish - orientation): orientation_BORIS_data_reshape_analysis.ipynb
 
 ### Table S2  
-- Calculate accuracy score: wing_extension_BORIS_keypointmoseq_data_reshape_analysis.ipynb
+- Calculate accuracy score: wing_extension_keypointmoseq_data_reshape_analysis.ipynb
 
 ### Table S3  
-- Calculate accuracy score: trophallaxis_BORIS_keypointmoseq_data_reshape_analysis.ipynb
+- Calculate accuracy score: trophallaxis_keypointmoseq_data_reshape_analysis.ipynb
 
 ### Table S4  
-- Calculate accuracy score: wing_extension_BORIS_asoid_data_reshape_analysis.ipynb
+- Calculate accuracy score: wing_extension_asoid_data_reshape_analysis.ipynb
 
 ### Table S5  
-- Calculate accuracy score: trophallaxis_BORIS_asoid_data_reshape_analysis.ipynb
+- Calculate accuracy score: trophallaxis_asoid_data_reshape_analysis.ipynb
 
 ### Table S6
-- Calculate accuracy score (Mouse-Ventral1): mouse_ventral1_BORIS_yoru_analysis.ipynb
-- Calculate accuracy score (Mouse-Ventral2): mouse_ventral2_BORIS_yoru_analysis.ipynb
+- Calculate accuracy score (Mouse-Ventral1): mouse_ventral1_yoru_analysis.ipynb
+- Calculate accuracy score (Mouse-Ventral2): mouse_ventral2_yoru_analysis.ipynb
+- Calculate accuracy score (CalM21): CalM21_dataset_yoru_analysis.py
 
 ### Table S10   
 - Calculate inference speed: YOLO_latency_compared_to_GPUs.ipynb
