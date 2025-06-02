@@ -119,4 +119,8 @@
 - Calculate accuracy score (CalM21): CalM21_dataset_yoru_analysis.py
 
 ### Table S10   
-- Calculate inference speed: YOLO_latency_compared_to_GPUs.ipynb
+- Calculate inference speed: YOLO_latency_compared_to_GPUs.ipynb  
+
+### SLEAP real-time analysis program
+- System: sleap_real_time_task_program.py  
+- Arduino Firmata program: arduino.py
