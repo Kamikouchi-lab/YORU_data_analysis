@@ -57,6 +57,43 @@ describe(df_data_closed)
 describe(df_data_GR)
 describe(df_data_noGR)
 
+# 出力ファイルパス（必要に応じて変更）
+out_csv <- "../datas/mouse_detection_iou_describe_summary.csv"
+
+# クラスごと（class_nameごと）に describe を実行し、結合
+per_class_desc <- df_data %>%
+  group_by(class_name) %>%
+  group_modify(?{
+    num_only <- dplyr::select(.x, where(is.numeric))
+    if (ncol(num_only) == 0) {
+      return(tibble::tibble()) # 数値列が無い場合は空
+    }
+    d <- psych::describe(num_only, fast = FALSE)
+    d <- tibble::as_tibble(d, rownames = "variable")
+    d
+  }) %>%
+  ungroup() %>%
+  relocate(class_name, .before = variable)
+
+# 全体（全クラスまとめて）の describe
+overall_desc <- df_data %>%
+  dplyr::select(where(is.numeric)) %>%
+  { 
+    d <- psych::describe(., fast = FALSE)
+    tibble::as_tibble(d, rownames = "variable") %>%
+      mutate(class_name = "ALL", .before = 1)
+  }
+
+# 結合して書き出し
+desc_all <- bind_rows(overall_desc, per_class_desc)
+
+# 小数点桁数などを整えたい場合はここで round() などを適用可能
+# 例: desc_all <- desc_all %>% mutate(across(where(is.numeric), ?round(., 6)))
+
+readr::write_csv(desc_all, out_csv)
+
+message("Saved describe summary to: ", out_csv)
+
 df_data <- df_data %>%
   transform(class_names = factor(class_name, levels = c("run", "stop", "whiskerON", "whiskerOFF","open", "closed", "GR", "noGR")))
 

@@ -1,0 +1,13 @@
+﻿Dataset,Model,Accuracy,Precision,Recall,F1-Score
+fly-wing_extension,YOLOv5s,0.99543,0.99565,0.99524,0.99542
+fly-wing_extension,DenseNet121,0.98174,0.98221,0.98133,0.98169
+fly-wing_extension,ResNet50,0.97260,0.97305,0.97218,0.97253
+fly-wing_extension,VGG16,0.52055,0.26027,0.50000,0.34234
+ant-trophallaxis,YOLOv5s,0.97802,0.97768,0.97896,0.97799
+ant-trophallaxis,DenseNet121,0.97802,0.97796,0.97796,0.97796
+ant-trophallaxis,ResNet50,0.97253,0.97277,0.97214,0.97243
+ant-trophallaxis,VGG16,0.96154,0.96134,0.96152,0.96143
+zebra-orientation,YOLOv5s,0.96654,0.96688,0.96748,0.96653
+zebra-orientation,DenseNet121,0.97323,0.97345,0.97297,0.97318
+zebra-orientation,ResNet50,0.96845,0.96871,0.96815,0.96839
+zebra-orientation,VGG16,0.95124,0.95114,0.95121,0.95117
